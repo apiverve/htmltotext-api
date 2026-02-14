@@ -1,0 +1,84 @@
+openapi: 3.0.4
+info:
+  title: HTML to Text
+  description: >-
+    HTML to Text is a simple tool for converting HTML to text. It returns the
+    text extracted from the HTML.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.0
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+  - url: https://api.apiverve.com/
+paths:
+  /v1/htmltotext:
+    post:
+      summary: Convert HTML to Text
+      description: Convert HTML to text
+      operationId: htmltotext
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: object
+                    description: data
+              example:
+                status: ok
+                error: null
+                data:
+                  text: >-
+                    This is an example paragraph. Anything in the body tag will
+                    appear on the page, just like this p tag and its contents.
+                  parsed: true
+                  detectedLanguage:
+                    language: english
+                    confidence: 0.3507446808510638
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occurred, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                html:
+                  type: string
+                  description: The HTML to convert to text
+              required:
+                - html
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+  - api_key: []
+sampleRequest:
+  html: >-
+    <!doctype html> <html>  <head> <title>This is the title of the
+    webpage!</title> </head> <body> <p>This is an example paragraph. Anything in
+    the <strong>body</strong> tag will appear on the page, just like this
+    <strong>p</strong> tag and its contents.</p> </body> </html>

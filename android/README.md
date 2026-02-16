@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:htmltotext-api:1.1.13'
+    implementation 'com.github.apiverve:htmltotext-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ HTMLtoTextAPIClient client = new HTMLtoTextAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("html", "");
+    parameters.put("html", "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>");
 
     // Execute the request
     APIResponse response = client.execute(parameters);

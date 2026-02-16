@@ -44,7 +44,7 @@ from apiverve_htmltotext.apiClient import HtmltotextAPIClient
 # Initialize the client with your APIVerve API key
 api = HtmltotextAPIClient("[YOUR_API_KEY]")
 
-query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
 
 try:
     # Make the API call
@@ -82,7 +82,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
 ```
 
 ###### Simple Request
@@ -125,7 +125,7 @@ from apiverve_htmltotext.apiClient import HtmltotextAPIClient, HtmltotextAPIClie
 
 api = HtmltotextAPIClient("[YOUR_API_KEY]")
 
-query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
 
 try:
     result = api.execute(query)
@@ -146,7 +146,7 @@ from apiverve_htmltotext.apiClient import HtmltotextAPIClient, HtmltotextAPIClie
 
 api = HtmltotextAPIClient("[YOUR_API_KEY]")
 
-query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
 
 try:
     result = api.execute(query)
@@ -180,7 +180,7 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_htmltotext.apiClient import HtmltotextAPIClient, HtmltotextAPIClientError
 
-query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
 
 # Using context manager ensures proper cleanup
 with HtmltotextAPIClient("[YOUR_API_KEY]") as api:
@@ -206,7 +206,7 @@ from apiverve_htmltotext.apiClient import HtmltotextAPIClient
 # Enable debug mode
 api = HtmltotextAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -221,8 +221,9 @@ from apiverve_htmltotext.apiClient import HtmltotextAPIClient
 
 api = HtmltotextAPIClient("[YOUR_API_KEY]")
 
+query = { "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+
 try:
-    query = { "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
     result = api.execute(query)
     print(result)
 finally:

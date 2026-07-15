@@ -50,6 +50,8 @@ paths:
                   detectedLanguage:
                     language: english
                     confidence: 0.3507446808510638
+                  characterCount: 118
+                  wordCount: 22
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':

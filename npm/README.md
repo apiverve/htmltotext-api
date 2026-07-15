@@ -127,7 +127,9 @@ async function makeRequest() {
     "detectedLanguage": {
       "language": "english",
       "confidence": 0.3507446808510638
-    }
+    },
+    "characterCount": 118,
+    "wordCount": 22
   }
 }
 ```

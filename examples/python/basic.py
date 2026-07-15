@@ -14,14 +14,20 @@ API_URL = 'https://api.apiverve.com/v1/htmltotext'
 
 def call_htmltotext_api():
     """
-    Make a GET request to the HTML to Text API
+    Make a POST request to the HTML to Text API
     """
     try:
+        # Request body
+        request_body &#x3D; {
+    &#x27;html&#x27;: &#x27;&lt;!doctype html&gt; &lt;html&gt;  &lt;head&gt; &lt;title&gt;This is the title of the webpage!&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;This is an example paragraph. Anything in the &lt;strong&gt;body&lt;/strong&gt; tag will appear on the page, just like this &lt;strong&gt;p&lt;/strong&gt; tag and its contents.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;&#x27;
+}
+
         headers = {
-            'x-api-key': API_KEY
+            'x-api-key': API_KEY,
+            'Content-Type': 'application/json'
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.post(API_URL, headers=headers, json=request_body)
 
         # Raise exception for HTTP errors
         response.raise_for_status()

@@ -25,6 +25,9 @@ namespace APIVerve.API.HTMLtoText
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,10 +36,16 @@ namespace APIVerve.API.HTMLtoText
         public string Text { get; set; }
 
         [JsonProperty("parsed")]
-        public bool Parsed { get; set; }
+        public bool? Parsed { get; set; }
 
         [JsonProperty("detectedLanguage")]
         public DetectedLanguage DetectedLanguage { get; set; }
+
+        [JsonProperty("characterCount")]
+        public long? CharacterCount { get; set; }
+
+        [JsonProperty("wordCount")]
+        public long? WordCount { get; set; }
     }
 
     public partial class DetectedLanguage
@@ -45,6 +54,18 @@ namespace APIVerve.API.HTMLtoText
         public string Language { get; set; }
 
         [JsonProperty("confidence")]
-        public double Confidence { get; set; }
+        public double? Confidence { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }

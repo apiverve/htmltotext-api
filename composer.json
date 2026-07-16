@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/htmltotext",
+    "description": "HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "htmltotext",
+        "html to text",
+        "html to text api",
+        "html to text tool",
+        "html to text software",
+        "html to text service"
+    ],
+    "homepage": "https://htmltotext.apiverve.com?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/htmltotext",
+        "source": "https://github.com/apiverve/htmltotext-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Htmltotext\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Htmltotext\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

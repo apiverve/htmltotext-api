@@ -1,13 +1,12 @@
 HTML to Text API
 ============
 
-HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.
+HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [HTML to Text API](https://htmltotext.apiverve.com?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-htmltotext.svg)](https://pypi.org/project/apiverve-htmltotext/)
+
+This is a Python wrapper for the [HTML to Text API](https://apiverve.com/marketplace/htmltotext?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-htmltotext
 
 ## Configuration
 
-Before using the htmltotext API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the HTML to Text API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The HTML to Text API documentation is found here: [https://docs.apiverve.com/ref/htmltotext](https://docs.apiverve.com/ref/htmltotext?utm_source=pypi&utm_medium=readme).
+The HTML to Text API documentation is found here: [https://docs.apiverve.com/ref/htmltotext](https://docs.apiverve.com/ref/htmltotext?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -104,10 +103,13 @@ print(result)
   "data": {
     "text": "This is an example paragraph. Anything in the body tag will appear on the page, just like this p tag and its contents.",
     "parsed": true,
+    "extractionMethod": "article",
     "detectedLanguage": {
       "language": "english",
       "confidence": 0.3507446808510638
-    }
+    },
+    "characterCount": 118,
+    "wordCount": 23
   }
 }
 ```
@@ -235,7 +237,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -246,12 +248,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

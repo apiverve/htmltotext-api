@@ -1,13 +1,13 @@
-# [HTML to Text API](https://htmltotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [HTML to Text API](https://apiverve.com/marketplace/htmltotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.
+HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded.
 
 The HTML to Text API provides a simple, reliable way to integrate html to text functionality into your applications. Built for developers who need production-ready html to text capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://htmltotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/htmltotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://htmltotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/htmltotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -167,7 +167,7 @@ go get github.com/apiverve/htmltotext-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [HTML to Text API](https://htmltotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [HTML to Text API](https://apiverve.com/marketplace/htmltotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/htmltotext](https://docs.apiverve.com/ref/htmltotext)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -219,12 +219,13 @@ A real response from the HTML to Text API:
   "data": {
     "text": "This is an example paragraph. Anything in the body tag will appear on the page, just like this p tag and its contents.",
     "parsed": true,
+    "extractionMethod": "article",
     "detectedLanguage": {
       "language": "english",
       "confidence": 0.3507446808510638
     },
     "characterCount": 118,
-    "wordCount": 22
+    "wordCount": 23
   }
 }
 ```
@@ -233,7 +234,7 @@ A real response from the HTML to Text API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [HTML to Text API](https://htmltotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [HTML to Text API](https://apiverve.com/marketplace/htmltotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/htmltotext",
-  "version": "1.2.0",
-  "description": "HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.",
+  "version": "1.2.2",
+  "description": "HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "html to text", "html to text api", "html to text tool", "html to text software", "html to text service"
+    "html to text api", "convert html to text", "strip html tags", "extract text from html", "html to plain text"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/htmltotext-api/issues"
   },
-  "homepage": "https://htmltotext.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/htmltotext?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

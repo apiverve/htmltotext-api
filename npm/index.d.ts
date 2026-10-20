@@ -27,6 +27,7 @@ declare module '@apiverve/htmltotext' {
   interface HTMLtoTextData {
       text:             null | string;
       parsed:           boolean | null;
+      extractionMethod: null | string;
       detectedLanguage: DetectedLanguage;
       characterCount:   number | null;
       wordCount:        number | null;

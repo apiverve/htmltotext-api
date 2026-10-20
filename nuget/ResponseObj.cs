@@ -38,6 +38,9 @@ namespace APIVerve.API.HTMLtoText
         [JsonProperty("parsed")]
         public bool? Parsed { get; set; }
 
+        [JsonProperty("extractionMethod")]
+        public string ExtractionMethod { get; set; }
+
         [JsonProperty("detectedLanguage")]
         public DetectedLanguage DetectedLanguage { get; set; }
 

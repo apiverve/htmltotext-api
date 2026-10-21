@@ -1,7 +1,7 @@
 {
     "name": "apiverve/htmltotext",
-    "description": "HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.",
-    "version": "1.2.0",
+    "description": "HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "htmltotext",
-        "html to text",
         "html to text api",
-        "html to text tool",
-        "html to text software",
-        "html to text service"
+        "convert html to text",
+        "strip html tags",
+        "extract text from html",
+        "html to plain text"
     ],
-    "homepage": "https://htmltotext.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/htmltotext?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/htmltotext",

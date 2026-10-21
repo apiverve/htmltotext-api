@@ -19,7 +19,7 @@ use APIVerve\Htmltotext\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://htmltotext.apiverve.com?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/htmltotext?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {

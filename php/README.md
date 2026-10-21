@@ -1,6 +1,6 @@
 # HTML to Text API - PHP Package
 
-HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.
+HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded.
 
 ## Installation
 
@@ -71,12 +71,13 @@ $client = new Client(
   "data": {
     "text": "This is an example paragraph. Anything in the body tag will appear on the page, just like this p tag and its contents.",
     "parsed": true,
+    "extractionMethod": "article",
     "detectedLanguage": {
       "language": "english",
       "confidence": 0.3507446808510638
     },
     "characterCount": 118,
-    "wordCount": 22
+    "wordCount": 23
   }
 }
 ```
@@ -88,11 +89,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/htmltotext?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/htmltotext?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://htmltotext.apiverve.com?utm_source=php&utm_medium=readme](https://htmltotext.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/htmltotext?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/htmltotext?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// HTML to Text API client.
 ///
-/// For more information, visit: https://htmltotext.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/htmltotext?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [html] (required) - The HTML to convert to text

@@ -1,7 +1,7 @@
 name: apiverve_htmltotext
-description: HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.
-version: 1.1.14
-homepage: https://htmltotext.apiverve.com?utm_source=dart&utm_medium=homepage
+description: "HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/htmltotext?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/htmltotext-api/tree/main/dart
 
 environment:

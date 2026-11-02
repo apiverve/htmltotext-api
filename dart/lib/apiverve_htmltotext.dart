@@ -1,8 +1,8 @@
 /// HTML to Text API client for Dart/Flutter
 ///
-/// HTML to Text is a simple tool for converting HTML to text. It returns the text extracted from the HTML.
+/// HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded.
 ///
-/// For more information, visit: https://htmltotext.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/htmltotext?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_htmltotext;
 
 export 'src/client.dart';

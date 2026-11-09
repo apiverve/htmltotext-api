@@ -1,6 +1,6 @@
 name: apiverve_htmltotext
 description: "HTML to Text extracts clean plain text from raw HTML markup, reporting word counts and character counts. It identifies main article bodies automatically, records the extraction method used, and notes whether parsing succeeded."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/htmltotext?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/htmltotext-api/tree/main/dart
 
